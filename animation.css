@@ -1,0 +1,16 @@
+:root{
+    --bg-color: #FFF;
+    --text-color: #000;
+}
+
+main{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#dark-mode-toggle:checked + main{
+    --bg-color: #26242E;
+    --text-color: #FFF;   
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out; 
+}
